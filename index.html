@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style2.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
@@ -409,12 +409,15 @@
 
         <div class="contact-side2">
             <h2>Contact Me</h2>
-            <form action="#" class="contact-form">
-                <input type="text" placeholder="Name" required>
-                <input type="email" placeholder="Email" required>
-                <textarea placeholder="Message" required></textarea>
+            <form action="https://api.web3forms.com/submit" method="post" class="contact-form">
+                
+                <input type="hidden" name="access_key" value="f6ee2091-91d9-4da8-ac9b-1513a5c970ad">
+
+                <input type="text" placeholder="Name"  name="name" required>
+                <input type="email" placeholder="Email" name="email"  required>
+                <textarea placeholder="Message"  name="message"  required></textarea>
                 <input id="send" type="submit" value="Send">
-                <button>
+                <button  type="submit">
                     <div class="svg-wrapper-1">
                         <div class="svg-wrapper">
                             <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
