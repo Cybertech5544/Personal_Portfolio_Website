@@ -64,9 +64,19 @@ header {
     justify-content: space-between;
     border-bottom: 1px solid var(--hover-color);
     display: flex;
-    z-index: 100;
+    z-index: 100000;
     width: 100%;
 
+}
+.logo{
+    width: 50px;
+    height:50px;
+    
+}
+.logo img{
+    width: 100%;
+    height: 100%;
+    
 }
 
 header nav {
@@ -534,6 +544,20 @@ circle {
 .skill-bar-item.animate circle {
     stroke-dashoffset: 165;
 }
+.skill-bar-item.animate #circle1 {
+    stroke-dashoffset: 60;
+}
+.skill-bar-item.animate #circle2 {
+    stroke-dashoffset: 90;
+}
+.skill-bar-item.animate #circle3 {
+    stroke-dashoffset: 350;
+}
+.skill-bar-item.animate #circle4 {
+    stroke-dashoffset: 400;
+}
+
+
 
 #section-3 svg {
     transform: rotate(-90deg);
@@ -590,7 +614,7 @@ circle {
 .project-item3,
 .project-item4 {
     width: 50%;
-    height: 100vh;
+    height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -602,11 +626,6 @@ circle {
 h4 {
     font-size: var(--h2-font);
 }
-
-
-
-
-
 
 /*Basic Phone styling*/
 
@@ -964,15 +983,18 @@ button:hover svg {
         position: absolute;
         right: 0;
         top: 60px;
-        background-color: #33333365;
+        background-color:var(--bg-color);
         width: 50%;
         height: 50vh;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        transform: translateX(100%);
+        transform: translateX(150%);
         transition: transform 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-        gap: 1rem;
+    }
+
+    header nav ul{
+        gap: 0px;
     }
 
     ul a {
@@ -986,6 +1008,10 @@ button:hover svg {
 
     ul li {
         margin: 1.5rem 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
     }
 
     #menu-toggle:checked~ul {
@@ -1015,18 +1041,13 @@ button:hover svg {
         padding-top: 85%;
     }
 
-    .allsetion {
-        /* flex-direction: column; */
-    }
+
 
     .home-side1 {
         text-align: center;
     }
 
-    #section-5 {
 
-        /* padding: 0 0%; */
-    }
 
     .contact-side1,
     .contact-side2 {
@@ -1047,10 +1068,7 @@ button:hover svg {
 }
 
 @media (max-width:900px) {
-    #section-2 h2 {
-        /* font-size: 3rem; */
 
-    }
 
     #section-2 p {
         display: inline-flex;
